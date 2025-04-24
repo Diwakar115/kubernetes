@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Replicaset
+metadata:
+  name: replicaset-1
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      sun: moon
+    template:
+      metadata:
+        labels:
+          sun: moon
+      spec:
+        containers;
+         - name: replica-cont
+           image: nginx
+	   ports:
+	    - containerPort: 80
+
