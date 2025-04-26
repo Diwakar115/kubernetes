@@ -7,5 +7,5 @@ spec:
     - name: con-1
       image: nginx
       ports:
-       - containerPort: 80
+       - containerPort: 80000
 
